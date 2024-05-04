@@ -1,0 +1,230 @@
+/* Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand {
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
+  }
+  
+  a {
+    color: #0077cc;
+  }
+  
+  .btn-primary {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+  }
+  
+  .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+  }
+  
+  .border-top {
+    border-top: 1px solid #e5e5e5;
+  }
+  .border-bottom {
+    border-bottom: 1px solid #e5e5e5;
+  }
+  
+  .box-shadow {
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+  }
+  
+  button.accept-policy {
+    font-size: 1rem;
+    line-height: inherit;
+  }
+  
+  .footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px;
+  }
+  
+  html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    background-color: #3B4EBA;
+    position: relative;
+}
+
+.nav-container {
+    position: absolute;
+}
+
+.header-text {
+    position: absolute;
+    left: 110px;
+    /*TODO*/
+    /*DÜZGÜN ORTALANMADI!!!*/
+    top: 20px;
+    height: 100px;
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    font-family: 'Inter'
+}
+
+.navbar-img-container {
+    position: absolute;
+    left: 10px;
+    top: 5px;
+}
+
+.navbar-text-container {
+    position: absolute;
+    top: 50%;
+    height: 100%;
+}
+
+.container {
+    width: 100%;
+    justify-content: space-between;
+}
+
+
+.left-panel {
+    position: relative;
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    box-shadow: 0px 0px 4px #00000040;
+    margin: 10px;
+    padding-top: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    /*TODO 
+        yükseklik sabit olmamal?
+    */
+    height: 690px;
+}
+
+.right-panel {
+
+    position: relative;
+    margin: 10px;
+    padding-top: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #F2F2F2;
+    border-radius: 10px;
+    box-shadow: 0px 0px 4px #00000040;
+    /*TODO 
+        yükseklik sabit olmamal?
+    */
+    height: 690px;
+}
+
+
+
+.info-icon-container {
+    position: relative;
+    top: 5px;
+    left: 93%;
+    width: 30px;
+    height: 30px;
+}
+
+.info-icon {
+    margin: 2%;
+    width: 29px;
+    height: 29px;
+}
+
+.profile-icon-container {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    top: 60px;
+}
+
+.profile-icon {
+    width: 106px;
+    height: 123px;
+}
+
+.info-panel-container {
+    position: absolute;
+    top: 300px;
+}
+
+.info-list-container {
+    position: relative;
+}
+.side-item-container{
+   
+    width: 100%;
+    height: 50px;
+    text-decoration: none;
+    color: black;
+   
+}
+    .side-item-container:hover {
+        background-color: #E5E5E5;
+        border-radius: 10px;
+        width: 300px;
+        box-shadow: 0 0 5px #ccc;
+    }
+.side-item-container:active {
+        background-color: #E5E5E5;
+        border-radius: 10px;
+        width: 300px;
+        box-shadow: 0 0 5px #ccc;
+    }
+
+
+
+a{
+    text-decoration: none;
+    color: black;
+
+}
+
+a:hover{
+    text-decoration: none;
+    color: black;
+}
+.side-text-container{
+
+    font-size: 20px;
+    
+}
+.side-container{
+position: relative;
+    top: 30%;
+
+    width: 100%;
+    height: 100%;
+   
+
+   
+
+}  

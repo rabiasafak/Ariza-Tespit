@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - WebApplication1</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="styled.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-gZsCKGY9rEXS6qkSmkF7Jgq6mfzTMsVkVkyNa7Rls4E6uBtBkTpW4Bp0fyFGy1a+GzvTYrF7Jbw1+HMbk4APrw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    @RenderSection("Styles", required: false)
+    @RenderSection("ScriptsStatus", required: false)
+
+    <style>
+        .side-text-container {
+            display: flex;
+            align-items: center;
+        }
+
+            .side-text-container i {
+                margin-right: 10px;
+                font-size: 18px; /* İkon boyutunu ayarla */
+            }
+
+        .side-text-container {
+            font-size: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar bg-body-tertiary">
+            <div class="container-fluid nav-container">
+                <div class="navbar-brand">
+                    <div class="navbar-img-container">
+                        <img src="/images/baibu-logo.png" alt="Logo" width="90" height="83" class="d-inline-block align-text-top">
+                    </div>
+                    <div class="navbar-text-container">
+                        <p class="header-text">
+                            Arıza Tespit Sistemi
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="row">
+        <div class="col-3">
+            <div class="left-panel">
+                <div class="side-container">
+                    <div class="side-item-container">
+                        <a href="@Url.Action("", "Forms")">
+                            <div class="side-text-container">
+                                <i class="fas fa-list"></i>
+                                Tümü
+                            </div>
+                        </a>
+                    </div>
+                    <div class="side-item-container">
+                        <a href="">
+                            <div class="side-text-container">
+                                <i class="fas fa-exclamation-circle"></i>
+                                Bekleyen Arızalar
+                            </div>
+                        </a>
+                    </div>
+                    <div class="side-item-container">
+                        <a href="">
+                            <div class="side-text-container">
+                                <i class="fas fa-check-circle"></i>
+                                Tamamlanan Arızalar
+                            </div>
+                        </a>
+                    </div>
+                    <div class="side-item-container">
+                        <a href="">
+                            <div class="side-text-container">
+                                <i class="fas fa-user"></i>
+                                Atanan Arızalar
+                            </div>
+                        </a>
+                    </div>
+                    <div class="side-item-container">
+                        <a href="@Url.Action("Create", "Forms")">
+                            <div class="side-text-container">
+                                <i class="fas fa-plus"></i>
+                                Oluştur
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-9">
+            <div class="right-panel">
+                @RenderBody()
+            </div>
+        </div>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
